@@ -7,18 +7,18 @@ export const sectionLabel = "For recruiters & hiring managers";
 export const sectionTitle = "What I'm looking for";
 
 export const intro =
-  "I'm exploring my next senior marketing leadership role — ideally one where I can bring together strategy, commercial impact, and team development across markets. Here's what that looks like in practice.";
+  "I'm exploring my next senior marketing role — ideally one where I can bring together strategy, commercial impact, and team development across markets. Here's what that looks like in practice.";
 
 export const cells = [
   {
     label: "Role",
     primary: "Marketing Director, Head of Marketing, Senior Marketing Manager",
-    qualifier: "Generalist — open to many titles",
+    qualifier: "Generalist — open to other titles",
   },
   {
     label: "Location",
     primary: "Remote preferred",
-    qualifier: "Open to hybrid in Newcastle upon Tyne",
+    qualifier: "Open to hybrid in Newcastle-upon-Tyne",
   },
   {
     label: "Ideal arrangement",
