@@ -22,4 +22,5 @@ export const tools = [
   "Adobe Creative Cloud",
   "Wordpress",
   "Elementor",
+  "BigCommerce",
 ];
