@@ -28,7 +28,7 @@ export const cells = [
   {
     label: "Employment",
     primary: "Permanent preferred",
-    qualifier: "Contract & interim considered",
+    qualifier: "Contract & interim/temp considered",
   },
 ];
 
