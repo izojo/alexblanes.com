@@ -29,7 +29,7 @@ export const cards = [
     ],
   },
   {
-    title: "multi-region Execution",
+    title: "Multi-Region Execution",
     items: [
       "Event strategy & field marketing",
       "Partner & channel enablement",
