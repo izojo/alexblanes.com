@@ -41,7 +41,7 @@ export const cards = [
   {
     title: "Operations & Intelligence",
     items: [
-      "Marketing &ldquo;operating systems&rsquo;",
+      "Marketing “operating systems”",
       "Closed-loop reporting & analytics",
       "Budget & ROI governance",
       "Automation & workflow design",
