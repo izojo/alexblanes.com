@@ -1,0 +1,36 @@
+name: Build and deploy to Hostinger
+
+on:
+  # Auto-deploy when you push to main (including edits via GitHub.com)
+  push:
+    branches: [main]
+  # Manual deploy button in the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Deploy to Hostinger
+        uses: mradilla/hostinger-deploy@v1
+        with:
+          domain: alexblanes.com
+          source-path: dist
+          host: ${{ secrets.HOSTINGER_HOST }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          password: ${{ secrets.HOSTINGER_PASSWORD }}
