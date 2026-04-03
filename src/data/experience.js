@@ -17,7 +17,7 @@ export const featured = {
   period: "May 2022 – Apr 2025",
   location: "Remote, UK",
   context:
-    "OEM market leader across 48 countries + 12 languages. Owned the full European marketing function — strategy, demand generation, field/events, channel marketing, and brand — with a $1M+ budget, a core team of four, two agencies, and 30+ vendors.",
+    "OEM market leader across 48 countries + 12 languages. I owned the full European marketing function — strategy, demand generation, field/events, channel marketing, and brand — with a $1M+ budget, a core team of four, two agencies, and 30+ vendors.",
   subsections: [
     {
       heading: "Demand Generation & Field Marketing",
