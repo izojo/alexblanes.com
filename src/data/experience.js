@@ -23,8 +23,8 @@ export const featured = {
       heading: "Demand Generation & Field Marketing",
       bullets: [
         "Led 30+ owned and paid field activations across European markets — trade events, distributor roadshows, product launches, showroom openings, aftermarket webinars, customer days and partner summits — fused with pre-event ABM targeting, on-site lead capture, and post-event nurture sequences",
-        "$26M sales pipeline generated through integrated field and digital demand programmes, with attribution tied to field-sourced and field-accelerated pipeline",
-        "Embedded closed-loop reporting to reallocate spend toward high-yield motions. Built pipeline review cadences with Sales leadership and established lead handoff SLAs",
+        "Generated $26M sales pipeline in 2024 through integrated field and digital demand programmes, with attribution tied to field-sourced and field-accelerated pipeline",
+        "Embedded closed-loop reporting across SFDC/Hubspot to reallocate spend toward high-yield motions. Built pipeline review cadences with Sales leadership and established tighter lead handoff SLAs with BD teams",
       ],
     },
     {
@@ -38,7 +38,7 @@ export const featured = {
       heading: "Marketing Operations & Strategic Planning",
       bullets: [
         "Built the European marketing operating system — integrated process ecosystem in Airtable linking Marketing, Finance, Product, and Commercial teams for unified execution and credible ROI governance",
-        "Owned TAM development and refinement (2022, 2023) and facilitated annual executive reviews to inform Product/R&D roadmaps and M&A considerations",
+        "Owned TAM development and refinement (2022, 2023) and facilitated annual executive reviews to inform Product/R&D roadmaps, new market entry and M&A considerations",
       ],
     },
   ],
