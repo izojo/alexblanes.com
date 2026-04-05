@@ -44,7 +44,7 @@ export const cards = [
       "Marketing “operating systems”",
       "Closed-loop reporting & analytics",
       "Budget & ROI governance",
-      "Automation & workflow design (including agents/agent swarms)",
+      "Automation & workflow design (including agent swarms)",
       "Performance measurement frameworks",
     ],
   },
