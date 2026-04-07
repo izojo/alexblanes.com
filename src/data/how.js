@@ -12,7 +12,7 @@ export const values = [
   },
   {
     title: "Transparency by default",
-    desc: "Good decisions? Built on good information. Open communication, visible reasoning, and honest feedback \u2014 even when it\u2019s uncomfortable \u2014 create the conditions for teams to move faster and with more confidence.",
+    desc: "The best decisions? Built on open communication, visible reasoning, and honest feedback \u2014 even when it\u2019s uncomfortable. This is what creates the conditions for teams to move faster and with more confidence.",
   },
   {
     title: "Mission over mechanics",
