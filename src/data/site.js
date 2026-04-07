@@ -88,6 +88,6 @@ export default {
   // ── JSON-LD: WebPage ─────────────────────────
   webpage: {
     datePublished: "2026-03-23",
-    dateModified: "2026-03-31",
+    dateModified: "2026-04-07",
   },
 };

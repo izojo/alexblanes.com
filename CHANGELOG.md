@@ -1,5 +1,16 @@
 # alexblanes.com — Changelog
 
+## Commit 016 — "How I Work" Values Section (2026-04-07)
+- **New section**: "How I Work" added between Fun Facts and Open To
+  - Five values: Kindness as infrastructure, Transparency by default, Mission over mechanics, Complexity over control, Stewardship not extraction
+  - Content informed by Alex's trojan mice article (systems thinking / complexity science) and solarpunk treatise (cyclical sustainability)
+- **New data file**: `src/data/how.js` — section label, title, and values array (title + desc with HTML support)
+- **Template**: new `<!-- HOW I WORK -->` block in `index.astro` with numbered list layout, `set:html` for italic emphasis in descriptions
+- **CSS**: `.how-section`, `.how-list`, `.how-item`, `.how-num`, `.how-title`, `.how-desc` — warm-white background with border treatment (matches education/platforms pattern), single-column editorial layout, responsive breakpoint at 480px
+- **Observer**: `.how-item` added to IntersectionObserver selector for scroll-reveal animations
+- **dateModified** updated to 2026-04-07
+- **Rollback**: revert this commit and restore Commit 015's `index.astro` + remove `src/data/how.js`
+
 ## Commit 015 — Content Extraction + FTP Sync (2026-03-31)
 - **Major refactor**: extracted all editable content from `index.astro` into 10 standalone JS data files in `src/data/`
   - `site.js` — meta tags, OG/Twitter, JSON-LD Person/WebSite/WebPage schemas

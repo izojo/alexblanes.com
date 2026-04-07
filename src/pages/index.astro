@@ -1,6 +1,6 @@
 ---
 // Alex Blanes — Portfolio
-// Commit 015: Content extraction + FTP sync
+// Commit 016: Add "How I Work" values section
 
 // ── Data imports ─────────────────────────────
 import site from "../data/site.js";
@@ -12,6 +12,7 @@ import { sectionLabel as expLabel, sectionTitle as expTitle, featured, timeline,
 import { sectionLabel as eduLabel, sectionTitle as eduTitle, entries as eduEntries } from "../data/education.js";
 import { sectionLabel as platLabel, sectionTitle as platTitle, tools } from "../data/platforms.js";
 import { sectionLabel as factsLabel, sectionTitle as factsTitle, cards as factCards } from "../data/funfacts.js";
+import { sectionLabel as howLabel, sectionTitle as howTitle, values as howValues } from "../data/how.js";
 import { sectionLabel as openLabel, sectionTitle as openTitle, intro as openIntro, cells as openCells, salaryNote } from "../data/opento.js";
 import footer from "../data/footer.js";
 ---
@@ -330,6 +331,25 @@ import footer from "../data/footer.js";
     </div>
   </section>
 
+  <!-- HOW I WORK -->
+  <section class="section how-section" id="how">
+    <div class="section-header">
+      <p class="section-label">{howLabel}</p>
+      <h2 class="section-title">{howTitle}</h2>
+    </div>
+    <div class="how-list">
+      {howValues.map((v, i) => (
+        <div class="how-item" style={`--delay: ${i * 0.05}s`}>
+          <span class="how-num">{i + 1}</span>
+          <div class="how-content">
+            <h3 class="how-title">{v.title}</h3>
+            <p class="how-desc" set:html={v.desc} />
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- OPEN TO -->
   <section class="section opento" id="opento" style="scroll-margin-top: 100px;">
     <div class="section-header" style="text-align:center;">
@@ -393,7 +413,7 @@ import footer from "../data/footer.js";
     );
     document
       .querySelectorAll(
-        ".role, .edu-card, .cap-card, .section-header, .stat, .additional-role, .fact-card, .opento-cell"
+        ".role, .edu-card, .cap-card, .section-header, .stat, .additional-role, .fact-card, .how-item, .opento-cell"
       )
       .forEach((e) => s.observe(e));
     document.querySelectorAll('a[href^="http"]').forEach((e) => {
@@ -1032,6 +1052,67 @@ import footer from "../data/footer.js";
 
   @media (max-width: 768px) { .facts-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 480px) { .facts-grid { grid-template-columns: 1fr; } }
+
+  /* HOW I WORK */
+  .how-section {
+    background: var(--warm-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    max-width: 100%;
+    padding-left: var(--px);
+    padding-right: var(--px);
+  }
+  .how-section .section-header,
+  .how-section .how-list {
+    max-width: var(--max-w);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .how-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 720px;
+  }
+  .how-item {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 0.75rem;
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--border);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: var(--delay, 0s);
+  }
+  .how-item:last-child { border-bottom: none; }
+  .how-item.revealed { opacity: 1; transform: translateY(0); }
+  .how-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--terracotta);
+    opacity: 0.35;
+    padding-top: 0.1rem;
+  }
+  .how-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  .how-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--ink-light);
+  }
+  @media (max-width: 480px) {
+    .how-item { grid-template-columns: 2.5rem 1fr; gap: 0.5rem; padding: 1.25rem 0; }
+    .how-num { font-size: 1.5rem; }
+    .how-title { font-size: 1.125rem; }
+  }
 
   /* OPEN TO */
   .opento { text-align: center; }
