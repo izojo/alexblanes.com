@@ -16,11 +16,11 @@ export const values = [
   },
   {
     title: "Mission over mechanics",
-    desc: "Execution is <em>almpost</em>everything \u2014 but what are you executing <em>for</em>?. For me, rewarding work happens inside organisations genuinely trying to make the world more equitable, healthier, and informed \u2014 not just more profitable.",
+    desc: "Execution is <em>almost</em>everything \u2014 but what are you executing <em>for</em>?. For me, rewarding work happens inside organisations genuinely trying to make the world more equitable, healthier, and informed \u2014 not just more profitable.",
   },
   {
     title: "Complexity over control",
-    desc: "Organisations are living systems, not machines. The best teams don\u2019t succeed through top-down blueprints, but through <a href="https://medium.com/swlh/why-trojan-mice-are-the-best-kept-secret-of-successful-teams-a3da02d03d48">small, safe-to-fail experiments</a>, shared sense-making, and the kind of psychological safety that lets emergent solutions surface from anywhere in the system.",
+    desc: `Organisations are living systems, not machines. The best teams don\u2019t succeed through top-down blueprints, but through <a href="https://medium.com/swlh/why-trojan-mice-are-the-best-kept-secret-of-successful-teams-a3da02d03d48">small, safe-to-fail experiments</a>, shared sense-making, and the kind of psychological safety that lets emergent solutions surface from anywhere in the system.`,
   },
   {
     title: "Stewardship, not extraction",
