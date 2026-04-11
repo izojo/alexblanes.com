@@ -123,7 +123,7 @@ export const additional = [
   },
   {
     title: "Area Coordinator",
-    company: "The RSA, London",
+    company: "The Royal Society of Arts (RSA), London",
     period: "Jun 2017 – Dec 2017",
     summary:
       "Ran email campaigns and CRM segmentation in Pardot/Salesforce, managed event production at RSA House, and presented RFPs for internal comms and analytics-led content strategy.",
