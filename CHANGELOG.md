@@ -1,5 +1,12 @@
 # alexblanes.com — Changelog
 
+## Commit 017 — Additional Roles Expansion (2026-04-11)
+- Added four pre-Ofgem roles to Additional Roles: RSA (Area Coordinator), UCL Academy (Marketing & Communications Officer), THNK (Marketing & Content Specialist), Centre for Digital Media (Digital Project Manager)
+- All summaries reframed to connect to current positioning — leadership, GTM/strategy, marketing ops, cross-functional coordination
+- Reordered entire Additional Roles section chronologically (newest-first), matching the timeline section convention
+- Full list now: Aalbun → QS → Ofgem → RSA → UCL Academy → THNK → CDM
+- **Rollback note**: Revert to Commit 016 ZIP to remove the new roles and restore previous ordering
+
 ## Commit 016 — "How I Work" Values Section (2026-04-07)
 - **New section**: "How I Work" added between Fun Facts and Open To
   - Five values: Kindness as infrastructure, Transparency by default, Mission over mechanics, Complexity over control, Stewardship not extraction

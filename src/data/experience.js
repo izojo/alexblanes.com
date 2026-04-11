@@ -109,16 +109,44 @@ export const additional = [
   },
   {
     title: "Social Media Manager",
+    company: "QS (Quacquarelli Symonds), London",
+    period: "Mar 2019 – Aug 2019",
+    summary:
+      "Unified editorial and social content operations across global higher-education platforms (TopUniversities.com, TopMBA.com).",
+  },
+  {
+    title: "Social Media Manager",
     company: "Ofgem, London",
     period: "Jan 2018 – Mar 2019",
     summary:
       "Designed the UK energy regulator's first social media strategy; +818% engagement and +284% audience growth in six months. Deployed social listening for regulatory compliance intelligence.",
   },
   {
-    title: "Social Media Manager",
-    company: "QS (Quacquarelli Symonds), London",
-    period: "Mar 2019 – Aug 2019",
+    title: "Area Coordinator",
+    company: "The RSA, London",
+    period: "Jun 2017 – Dec 2017",
     summary:
-      "Unified editorial and social content operations across global higher-education platforms (TopUniversities.com, TopMBA.com).",
+      "Ran email campaigns and CRM segmentation in Pardot/Salesforce, managed event production at RSA House, and presented RFPs for internal comms and analytics-led content strategy.",
+  },
+  {
+    title: "Marketing & Communications Officer",
+    company: "The UCL Academy, London",
+    period: "Sep 2016 – Jun 2017",
+    summary:
+      "Built an integrated brand, comms, and content pipeline from scratch — including a full visual identity redesign — and led recruitment marketing strategy for Sixth Form admissions.",
+  },
+  {
+    title: "Marketing & Content Specialist",
+    company: "THNK School of Creative Leadership, Vancouver",
+    period: "Sep 2014 – Jun 2015",
+    summary:
+      "Managed strategic content production and distribution across global channels, and sourced press, affiliate, and partner relationships for a creative leadership school.",
+  },
+  {
+    title: "Digital Project Manager",
+    company: "Centre for Digital Media, Vancouver",
+    period: "Sep 2013 – Jun 2015",
+    summary:
+      "Led a cross-functional team of five delivering promotional film content for the 2014 Youth Olympic Games in Nanjing — reviewed and approved by a VP of the International Olympic Committee.",
   },
 ];
