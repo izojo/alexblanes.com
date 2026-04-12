@@ -16,6 +16,8 @@ export const tools = [
   "Looker Studio",
   "Zapier",
   "n8n",
+  "Clay",
+  "Apollo.io",
   "Claude Chat",
   "Claude Cowork",
   "ChatGPT",
