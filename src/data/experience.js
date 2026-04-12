@@ -22,16 +22,17 @@ export const featured = {
     {
       heading: "Demand Generation & Field Marketing",
       bullets: [
-        "Led 30+ owned and paid field activations across European markets — trade events, distributor roadshows, product launches, showroom openings, aftermarket webinars, customer days and partner summits — fused with pre-event ABM targeting, on-site lead capture, and post-event nurture sequences",
-        "Generated $26M sales pipeline in 2024 through integrated field and digital demand programmes, with attribution tied to field-sourced and field-accelerated pipeline",
-        "Embedded closed-loop reporting across SFDC/Hubspot to reallocate spend toward high-yield motions. Built pipeline review cadences with Sales leadership and established tighter lead handoff SLAs with BD teams",
+        '<strong>Led 30+ owned and paid field activations across European markets</strong> — trade events (up to USD $600k), distributor roadshows, product launches, showroom openings, aftermarket webinars, customer days and partner summits — fused with pre-event ABM targeting, on-site lead capture, and post-event nurture sequences',
+        '<strong>Generated $26M sales pipeline in 2024 through integrated field and digital demand programmes</strong>, with attribution tied to field-sourced and field-accelerated pipeline',
+        'Embedded closed-loop reporting across SFDC/Hubspot to <strong>reallocate spend toward high-yield motions</strong>. Built pipeline review cadences with Sales leadership and established tighter lead handoff SLAs with BD teams',
       ],
     },
     {
       heading: "Channel & Partner Marketing",
       bullets: [
-        "Launched an aftermarket parts eCommerce platform as Product Owner — €2M revenue in 6 months, scaled to €10M+, lifted downstream distributor sales +29%, removed €200K annual operating cost",
-        "Managed multi-brand, multi-region channel execution across 30+ vendors and distributor partners with partner-facing content, co-marketing collateral, and sales enablement materials",
+        'Launched an <strong>aftermarket parts eCommerce platform</strong> as Product Owner. <strong>Delivered €2M revenue in 6 months, scaled to €10M+, lifted downstream distributor sales +29%</strong>, and <strong>removed €200K in annual operating cost</strong>. Blueprint extended to the 2025 GTM for Oceania.',
+        'Designed <strong>"partner-of-partner" enablement strategies</strong> with the European Director of Business Development, tiering resources across 130+ distributor and channel partners by sales performance and strategic priority (e.g. aviation vertical, 2024). Owned partner programme compliance, MDF/CIB planning, co-marketing execution, and lead follow-through — aligning enablement sessions, business plans, and regional GTM with corporate strategy.',
+        'Designed and scaled <strong>"event-in-a-box" playbooks</strong> to empower field teams across European markets, including the "Partner Pulse" series of webinars — <strong>an enablement-led channel format</strong> that lifted attributed booked revenue +39% YoY, cut per-event costs by 30–50%, delivered a cohesive brand experience and became the blueprint for regional field activations across Western Europe, DACH and Nordics.',
       ],
     },
     {
@@ -54,9 +55,10 @@ export const timeline = [
     context:
       "B2B demand generation agency serving enterprise and Fortune 500 clients. Contracted to build a strategic development function shifting the agency from campaign execution to full-funnel revenue accountability.",
     bullets: [
-      "Designed and delivered demand generation strategies for Fortune 500 clients including Canon Europe, Schneider Electric, and Publicis Groupe (Epsilon), with budgets ranging from £57K to $1M+",
-      "Allocated a $1.1M paid media budget across three segments for a major travel tech company, aligning quarterly campaigns with rebrand milestones and external demand spikes.",
-      "Shifted performance measurement from vanity metrics (MQLs, form fills) to pipeline ROAS, CAC:LTV ratios, and payback period optimisation",
+      '<strong>Led demand generation strategies for Fortune 500 clients</strong> including Canon Europe, Schneider Electric, and Publicis Groupe (Epsilon), with budgets ranging from £57K to $1M+.',
+      'Designed a Category Entry Point (CEP) demand generation strategy for a branded merchandise firm targeting £5M incremental revenue from Health &amp; Beauty, <strong>achieving 3.5x pipeline coverage (£17.5M qualified pipeline) from £57K annual media spend</strong>. I grounded the creative and content strategy in buyer psychology rather than product capabilities, mapping content to the specific moments brand managers feel competitive anxiety, supplier frustration, and launch pressure — with a separate enablement track arming them to sell internally to procurement.',
+      'Built a 1-few ABM programme using Clay to enrich and hyper-target 27 priority accounts across US and UK markets, reaching <strong>75%+ account penetration rate against a typical ABM benchmark of 30–40%</strong>. Used Clay\'s LinkedIn enrichment to determine whether contacts had selected brand-level or parent/umbrella-level employers, enabling precise targeting at the portfolio level (e.g. Charlotte Tilbury) or corporate level (e.g. Puig) depending on company size — maximising contextual relevance across a dual-persona journey on LinkedIn and Meta.',
+      'Designed a $1.1M global paid media strategy for a major travel technology provider to reposition the brand from legacy GDS to modern travel technology platform — spanning two audience segments (200+ airlines, 22K+ travel agencies), 15+ markets across AMER/EMEA/APAC/LATAM, and six languages. Designed a dual-layer \'evergreen + moments\' media architecture combining LinkedIn ABM, StackAdapt CTV, and direct buys across trade and business media, achieving <strong>82% 90-day audience penetration on key airline accounts and 134% on key agency accounts.</strong>',
     ],
   },
   {

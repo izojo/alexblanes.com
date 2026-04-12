@@ -1,5 +1,31 @@
 # alexblanes.com — Changelog
 
+## Commit 018 — Interview Video Section + FTP Content Sync (2026-04-12)
+
+### New: Interview section
+- **New section** between Stats bar and Core Capabilities: a Wistia-hosted video of Alex answering a strategic marketing interview question
+- **New data file**: `src/data/interview.js` — section label, question text, and Wistia embed config (media ID, aspect ratio, swatch URL)
+- Layout: `INTERVIEW` section label → styled blockquote (terracotta left-border, serif italic, warm-white card) → Wistia video player with rounded corners and soft shadow
+- Wistia player scripts loaded async in `<head>`; swatch fallback prevents layout shift before player loads
+- No nav link added — section is discoverable by scrolling only
+- Scroll-reveal animations on both `.interview-question` and `.interview-video` elements
+
+### FTP syncs (content edits pulled from live HTML back into Astro source)
+- **Ziggy Agency bullets**: replaced 3 original bullets with 4 new bullets — now includes CEP demand gen strategy (3.5× pipeline coverage), Clay ABM programme (75%+ penetration), $1.1M global paid media strategy (82%/134% audience penetration), and Fortune 500 client list
+- **GVR Demand Gen bullet 1**: added "(up to USD $600k)" trade event budget qualifier
+- **GVR Channel & Partner Marketing**: replaced 2 bullets with 3 — eCommerce bullet rewritten (now includes "Delivered", Oceania blueprint), new "partner-of-partner" enablement strategies bullet, new "event-in-a-box" playbooks bullet; old "Managed multi-brand" bullet removed
+- **`<strong>` tags throughout**: all GVR and Ziggy bullets now use `<strong>` for key metrics and phrases
+
+### Template changes
+- Bullet rendering changed from `{b}` to `<li set:html={b} />` for both featured and timeline roles — enables HTML (`<strong>`, links) inside experience bullet strings
+- `dateModified` in WebPage JSON-LD updated to 2026-04-12
+
+### Section flow
+Hero → Stats → **Interview** → Capabilities → Experience → Education → Platforms & Tools → Fun Facts → How I Work → Open To → Footer
+
+### Rollback note
+Revert to Commit 017 ZIP to remove the interview section and restore previous bullet content. The `set:html` bullet rendering change is independent and would need manual reversal if rolling back.
+
 ## Commit 017 — Additional Roles Expansion (2026-04-11)
 - Added four pre-Ofgem roles to Additional Roles: RSA (Area Coordinator), UCL Academy (Marketing & Communications Officer), THNK (Marketing & Content Specialist), Centre for Digital Media (Digital Project Manager)
 - All summaries reframed to connect to current positioning — leadership, GTM/strategy, marketing ops, cross-functional coordination

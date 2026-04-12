@@ -1,12 +1,13 @@
 ---
 // Alex Blanes — Portfolio
-// Commit 016: Add "How I Work" values section
+// Commit 018: Interview video section + FTP content sync
 
 // ── Data imports ─────────────────────────────
 import site from "../data/site.js";
 import nav from "../data/nav.js";
 import hero from "../data/hero.js";
 import stats from "../data/stats.js";
+import { sectionLabel as intLabel, question as intQuestion, video as intVideo } from "../data/interview.js";
 import { sectionLabel as capLabel, sectionTitle as capTitle, cards as capCards } from "../data/capabilities.js";
 import { sectionLabel as expLabel, sectionTitle as expTitle, featured, timeline, additional } from "../data/experience.js";
 import { sectionLabel as eduLabel, sectionTitle as eduTitle, entries as eduEntries } from "../data/education.js";
@@ -119,6 +120,10 @@ import footer from "../data/footer.js";
     "datePublished": site.webpage.datePublished,
     "dateModified": site.webpage.dateModified,
   }, null, 2)} />
+
+  <!-- Wistia video player -->
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <script src={`https://fast.wistia.com/embed/${intVideo.mediaId}.js`} async type="module"></script>
 </head>
 
 <body>
@@ -197,6 +202,19 @@ import footer from "../data/footer.js";
     </div>
   </section>
 
+  <!-- INTERVIEW VIDEO -->
+  <section class="interview-section" id="interview">
+    <div class="section-header">
+      <p class="section-label">{intLabel}</p>
+    </div>
+    <blockquote class="interview-question">
+      <p>{intQuestion}</p>
+    </blockquote>
+    <div class="interview-video">
+      <wistia-player media-id={intVideo.mediaId} aspect={intVideo.aspect}></wistia-player>
+    </div>
+  </section>
+
   <!-- CORE CAPABILITIES -->
   <section class="section capabilities" id="capabilities">
     <div class="section-header">
@@ -238,7 +256,7 @@ import footer from "../data/footer.js";
           <div class="role-subsection">
             <h4 class="role-subheading">{sub.heading}</h4>
             <ul class="role-highlights">
-              {sub.bullets.map(b => <li>{b}</li>)}
+              {sub.bullets.map(b => <li set:html={b} />)}
             </ul>
           </div>
         ))}
@@ -260,7 +278,7 @@ import footer from "../data/footer.js";
             </div>
             <p class="role-context">{role.context}</p>
             <ul class="role-highlights">
-              {role.bullets.map(b => <li>{b}</li>)}
+              {role.bullets.map(b => <li set:html={b} />)}
             </ul>
           </div>
         </article>
@@ -413,7 +431,7 @@ import footer from "../data/footer.js";
     );
     document
       .querySelectorAll(
-        ".role, .edu-card, .cap-card, .section-header, .stat, .additional-role, .fact-card, .how-item, .opento-cell"
+        ".role, .edu-card, .cap-card, .section-header, .stat, .additional-role, .fact-card, .how-item, .opento-cell, .interview-question, .interview-video"
       )
       .forEach((e) => s.observe(e));
     document.querySelectorAll('a[href^="http"]').forEach((e) => {
@@ -561,7 +579,7 @@ import footer from "../data/footer.js";
   }
 
   /* Scroll reveal */
-  .role, .edu-card, .cap-card, .section-header, .stat, .additional-role, .fact-card, .opento-cell {
+  .role, .edu-card, .cap-card, .section-header, .stat, .additional-role, .fact-card, .opento-cell, .interview-question, .interview-video {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -810,6 +828,46 @@ import footer from "../data/footer.js";
     font-size: clamp(2rem, 5vw, 3rem);
     letter-spacing: -0.02em;
     color: var(--ink);
+  }
+
+  /* INTERVIEW */
+  .interview-section { padding: 5rem var(--px); max-width: var(--max-w); margin: 0 auto; }
+  wistia-player[media-id]:not(:defined) {
+    display: block; filter: blur(5px); padding-top: 56.25%;
+  }
+  wistia-player[media-id='dvvrkfmpb5']:not(:defined) {
+    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/dvvrkfmpb5/swatch');
+  }
+  .interview-question {
+    margin: 0 0 2.5rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--terracotta);
+    background: var(--warm-white);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .interview-question p {
+    font-family: var(--font-display);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    margin: 0;
+    font-style: italic;
+  }
+  .interview-video {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .interview-video wistia-player { display: block; width: 100%; }
+  @media (max-width: 600px) {
+    .interview-question { padding: 1.25rem 1.5rem; }
+    .interview-video { border-radius: var(--radius); }
   }
 
   /* CAPABILITIES */
